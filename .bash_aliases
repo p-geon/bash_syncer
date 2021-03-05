@@ -90,6 +90,8 @@ alias a="alias"
 alias q="exit"
 alias c="clear"
 alias reload="exec bash -l"
+alias G="grep"
+alias p="pwd"
 
 # python
 alias ip="ipython"
