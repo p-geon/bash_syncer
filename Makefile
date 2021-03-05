@@ -7,7 +7,7 @@ init:
 	@echo "$(NOW)"
 	-@mv ~/.bash_profile ./_backup/.bash_profile_$(NOW)
 	@cp .bash_profile ~/.bash_profile
-	@echo "cd $(PWD) && sh $(NAME_CHECK_SCRIPT)\n\n$(CONTENT) && cd ~/" > ~/.bash_profile
+	@echo "cd $(PWD) && sh $(NAME_CHECK_SCRIPT)\n\n$(CONTENT)" > ~/.bash_profile
 	@cat .bash_footer >> ~/.bash_profile
 	@cat ~/.bash_profile
 
