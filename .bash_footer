@@ -1,0 +1,9 @@
+# =========================================
+## improve command: cd -> cd + ls
+cdls ()
+{
+  \cd "$@" && pwd && tree -L 1 ./
+}
+
+alias cd="cdls"
+
