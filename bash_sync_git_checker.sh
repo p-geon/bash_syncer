@@ -6,7 +6,7 @@ echo 1112345678999
 
  if [ "$HEADHASH" != "$UPSTREAMHASH" ]
  then
-   echo -e ${ERROR}[bash_syncer] Not up to date with origin. Aborting.${NOCOLOR}
+   echo -e ${ERROR}[bash_syncer] Not up to date with origin.${NOCOLOR}
    echo
    git pull origin main
    exit 0

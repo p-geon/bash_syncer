@@ -96,3 +96,7 @@ alias p="pwd"
 # python
 alias ip="ipython"
 alias jn="jupyter notebook"
+
+# editor
+alias vs="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code -r"
+alias vscode="vs"
