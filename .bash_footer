@@ -7,4 +7,3 @@ cdls ()
 
 alias cd="cdls"
 
-cd ~/
