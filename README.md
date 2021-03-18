@@ -6,6 +6,12 @@ cd bash_syncer
 make init
 ```
 
+- for bash (`make init`)
+- for zsh (`make init-zsh`)
+- `.bashrc`/`.zshrc` が空の場合、
+  - `mv bash/.bashrc ~/.bashrc`
+  - `mv bash/.zshrc ~/.zshrc`
+
 ## Overview
 
 実は結構違う

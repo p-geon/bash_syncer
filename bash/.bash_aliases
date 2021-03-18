@@ -2,9 +2,8 @@
 alias A="cat ~/.bash_aliases"
 alias V="vim ~/.bash_aliases"
 alias RR="source ~/.bashrc"
-alias SET="cp .bash_aliases ~/.bash_aliases && reload"
-alias GET="cp ~/.bash_aliases .bash_aliases"
-alias UPDATE="git add .bash_aliases && git commit -m 'update' && git push origin main"
+alias ZZ="source ~/.zshrc"
+alias SET="cp bash/.bash_aliases ~/.bash_aliases && reload"
 alias RRR="UPDATE && reload"
 alias SS="A | grep"
 

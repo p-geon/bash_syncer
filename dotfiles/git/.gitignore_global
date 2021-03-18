@@ -1,0 +1,13 @@
+# mac
+.DS_Store
+
+# python
+.ipynb_checkpoints
+__pycache__
+
+# heavy file
+*.pb
+*.hdf5
+
+# Unity
+*.meta
