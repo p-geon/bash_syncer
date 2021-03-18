@@ -4,6 +4,7 @@ NOW=`date '+%y%m%d_%H%M'`
 CONTENT=`cat ~/.bash_profile`
 
 init:
+	@cat ./.system/requirements.system | xargs sudo apt-get install -y
 	@echo "$(NOW)"
 	-@mv ~/.bash_profile ./_backup/.bash_profile_$(NOW)
 	@cp .bash_profile ~/.bash_profile
