@@ -40,6 +40,7 @@ alias lx="ls -Xl"
 alias sl="l"
 
 # tmux
+alias tmux.cs="cat ~/.tmux.conf | grep bind"
 alias t="tmux"
 alias ta="tmux a"
 alias tk="tmux kill-server"
