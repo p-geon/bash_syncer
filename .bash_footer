@@ -7,3 +7,6 @@ cdls ()
 
 alias cd="cdls"
 
+# ==========================================
+
+export EDITOR=vim # exclude evil editor "NANO"

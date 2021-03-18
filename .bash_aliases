@@ -6,6 +6,7 @@ alias SET="cp .bash_aliases ~/.bash_aliases && reload"
 alias GET="cp ~/.bash_aliases .bash_aliases"
 alias UPDATE="git add .bash_aliases && git commit -m 'update' && git push origin main"
 alias RRR="UPDATE && reload"
+alias SS="A | grep"
 
 # show Directory
 alias Td="tree -d -L 2 ./"
@@ -60,16 +61,18 @@ alias ga="git add"
 alias gaa="git add -A"
 ## commit
 alias gc="git commit -m"
-alias gca="git commit --amend -m"
+alias gam="git commit --amend"
 ## pull/push
 alias gpl="git pull origin main"
 alias gp="git push"
-alias gpom="git push origin main"
+alias main="git push origin main"
+alias master="git push origin master"
 alias gacp="git add -A && git commit -m 'update' && git push origin main"
 ## branch/graph
 alias gb="git branch"
 alias gl="git log --oneline"
 alias gg="git log --graph --all --format='%x09%an%x09%h %d %s'"
+alias ggg="git log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'"
 alias gs="git status -s"
 ## config
 alias gcl="git config --list"
