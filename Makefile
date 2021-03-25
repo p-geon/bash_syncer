@@ -8,7 +8,7 @@ init:
 	echo "$(NOW)"
 	-mv ~/.bash_profile ./_backup/.bash_profile_$(NOW)
 	cp bash/.bash_profile ~/.bash_profile
-	echo "cd $(PWD) && sh $(NAME_CHECK_SCRIPT) && cd ~/ && tree -L 1 ./ \n\n$(CONTENT)" > ~/.bash_profile
+	echo "cd $(PWD) && sh $(NAME_CHECK_SCRIPT) && cd - && tree -L 1 ./ \n\n$(CONTENT)" > ~/.bash_profile
 	cat bash/.bash_footer >> ~/.bash_profile
 	echo "alias S='cd $(PWD)'" >> ~/.bash_profile
 	cp bash/.bash_aliases ~/.bash_aliases
