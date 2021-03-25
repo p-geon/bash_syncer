@@ -57,6 +57,7 @@ alias mh="make help"
 # git
 alias g="git"
 ## add
+alias gadry="git add -A --dry-run" #pre-check without adding
 alias ga="git add"
 alias gaa="git add -A" #all
 alias gau="git add -u" #exclude untrack files
