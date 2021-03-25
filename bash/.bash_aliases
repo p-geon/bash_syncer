@@ -91,8 +91,10 @@ alias gswap="git stash -u && git checkout -b swap && git stash pop"
 alias d="docker"
 alias di="docker images"
 alias dp="docker ps -a"
-alias dclean="docker ps -a -q | xargs docker rm -f"
 
+alias drmi="docker images -f dangling=true -q | xargs docker rmi -f"
+alias dstop="docker ps -a -q | xargs docker rm -f"
+alias dclean="dstop && drmi"
 
 # watch
 alias wn="watch -n 2.0 nvidia-smi"
