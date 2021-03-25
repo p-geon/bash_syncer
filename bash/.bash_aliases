@@ -48,8 +48,8 @@ alias mtv="make tmux-vs"
 
 # make
 alias m="make"
-alias mb="make b"
-alias mr="make r"
+alias mb="make build"
+alias mr="make run"
 alias mbr="make br"
 alias mc="make clean"
 alias mh="make help"
@@ -73,17 +73,19 @@ alias gb="git branch"
 alias gl="git log --oneline"
 alias gg="git log --graph --all --format='%x09%an%x09%h %d %s'"
 alias ggg="git log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'"
-alias gs="git status -s"
+alias gs="git status"
+alias gss="git status -s"
 ## config
 alias gcl="git config --list"
 ## stash
-alias gst="git stash"
-alias igst="git stash pop"
+alias gswap="git stash -u && git checkout -b swap && git stash pop"
 
 # Docker
 alias d="docker"
 alias di="docker images"
 alias dp="docker ps -a"
+alias dclean="docker ps -a -q | xargs docker rm -f"
+
 
 # watch
 alias wn="watch -n 2.0 nvidia-smi"
