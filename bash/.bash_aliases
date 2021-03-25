@@ -84,6 +84,7 @@ alias master="git push origin master"
 alias gacp="git add -A && git commit -m 'update' && git push origin main"
 ## branch/graph
 alias gb="git branch"
+alias merge="git merge --squash"
 alias gl="git log --oneline"
 alias gg="git log --graph --all --format='%x09%an%x09%h %d %s'"
 alias ggg="git log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'"
