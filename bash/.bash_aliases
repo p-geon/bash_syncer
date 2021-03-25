@@ -7,6 +7,7 @@ alias SET="cp bash/.bash_aliases ~/.bash_aliases && reload"
 alias RRR="UPDATE && reload"
 alias SS="A | grep"
 
+
 # show Directory
 alias Td="tree -d -L 2 ./"
 alias T1d="tree -d -L 1 ./"
@@ -24,11 +25,13 @@ alias LL="ls -la ../"
 alias W="ls -l | wc -l"
 alias DU="du -d 2 -m"
 
+
 # cd variant
 alias ~="cd ~/"
 alias ..="cd ../"
 alias ...="cd ../../"
 alias z="cd -"
+
 
 # some more ls aliases
 alias l='ls -CF'
@@ -38,6 +41,7 @@ alias lt="ls -lt"
 alias lx="ls -Xl"
 alias sl="l"
 
+
 # tmux
 alias tmux.cs="cat ~/.tmux.conf | grep bind"
 alias t="tmux"
@@ -46,6 +50,7 @@ alias tk="tmux kill-server"
 alias mt="make tmux"
 alias mtv="make tmux-vs"
 
+
 # make
 alias m="make"
 alias mb="make build"
@@ -53,6 +58,7 @@ alias mr="make run"
 alias mbr="make br"
 alias mc="make clean"
 alias mh="make help"
+
 
 # git
 alias g="git"
@@ -87,6 +93,7 @@ alias gcl="git config --list"
 ## stash
 alias gswap="git stash -u && git checkout -b swap && git stash pop"
 
+
 # Docker
 alias d="docker"
 alias di="docker images"
@@ -96,10 +103,22 @@ alias drmi="docker images -f dangling=true -q | xargs docker rmi -f"
 alias dstop="docker ps -a -q | xargs docker rm -f"
 alias dclean="dstop && drmi"
 
+
 # watch
 alias wn="watch -n 2.0 nvidia-smi"
 
-# basic-command
+
+# specific
+alias heavy-sarch="du -ah ./ | sort -rh | head -5"
+alias ps-python="ps aux | grep python"
+
+
+# OS-utils
+alias show-architecture="uname -moi"
+alias show-os="cat /etc/os-release"
+
+
+# basic-commands
 alias a="alias"
 alias q="exit"
 alias c="clear"
@@ -107,8 +126,10 @@ alias reload="exec bash -l"
 alias G="grep"
 alias p="pwd"
 
+
 # python
 alias ip="ipython"
+
 
 # editor
 alias vs="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code -r"
