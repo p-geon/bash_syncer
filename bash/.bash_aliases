@@ -58,8 +58,9 @@ alias mh="make help"
 alias g="git"
 ## add
 alias ga="git add"
-alias gaa="git add -A"
-alias gau="git add -u"
+alias gaa="git add -A" #all
+alias gau="git add -u" #exclude untrack files
+alias gap="git add -p" #patch
 ## commit
 alias gc="git commit -m"
 alias gam="git commit --amend"
