@@ -12,6 +12,20 @@ make init
   - `mv bash/.bashrc ~/.bashrc`
   - `mv bash/.zshrc ~/.zshrc`
 
+## 自動更新
+
+bashにログインすると~/.bash_profileから自動でシェルすくリプトが起動する。
+
+## 手動更新
+
+シェルスクリプトを動かす部分を修正した場合は手動で更新する必要あり。
+
+```
+S 
+make init
+reload
+```
+
 ## Overview
 
 実は結構違う
