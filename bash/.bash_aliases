@@ -59,6 +59,7 @@ alias g="git"
 ## add
 alias ga="git add"
 alias gaa="git add -A"
+alias gau="git add -u"
 ## commit
 alias gc="git commit -m"
 alias gam="git commit --amend"
