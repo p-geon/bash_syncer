@@ -26,6 +26,15 @@ make init
 reload
 ```
 
+## コマンド検索 (例: git)
+
+```
+SS git
+```
+
+= A | grep git
+= cat ~/.bash_aliases | grep git
+
 ## Overview
 
 実は結構違う
