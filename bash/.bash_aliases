@@ -62,9 +62,13 @@ alias ga="git add"
 alias gaa="git add -A" #all
 alias gau="git add -u" #exclude untrack files
 alias gap="git add -p" #patch
+alias unadd="git reset --mixed HEAD" # revert add
+
 ## commit
 alias gc="git commit -m"
 alias gam="git commit --amend"
+alias uncommit="git reset --soft HEAD^" # revert commit
+
 ## pull/push
 alias gpl="git pull origin main"
 alias gp="git push"
