@@ -40,6 +40,7 @@ alias la='ls -A'
 alias lt="ls -lt"
 alias lx="ls -Xl"
 alias sl="l"
+alias lln="ll | wc -n" # counting file amount
 
 
 # tmux
