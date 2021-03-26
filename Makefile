@@ -44,3 +44,15 @@ check-os:
 		then echo "$(UNAME)" is Linux;\
 	else echo "$(UNAME)" is Mac;\
 	fi
+
+# ---
+
+conda-install:
+	curl -L -o miniconda.sh https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+	bash miniconda.sh -b -p ${HOME}/.miniconda
+	echo export PATH="${HOME}/.miniconda/bin:$${PATH}" >> $${HOME}/.bashrc
+	souce $${HOME}/.bashrc
+	
+ENVNAME = envname
+conda-create: ## 
+	conda create -n ${ENVNAME} python=3.8
