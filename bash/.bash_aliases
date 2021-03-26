@@ -141,6 +141,9 @@ alias p="pwd"
 # python
 alias ip="ipython"
 
+# pytorch/GPU
+alias pytorchgpucheck="python -c 'import torch;print(torch.cuda.is_available(), torch.cuda.device_count());'"
+
 
 # editor
 alias vs="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code -r"
