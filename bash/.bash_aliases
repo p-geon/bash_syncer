@@ -142,8 +142,8 @@ alias p="pwd"
 alias ip="ipython"
 
 # pytorch/GPU
-alias pytorchgpucheck="python -c 'import torch;print(torch.cuda.is_available(), torch.cuda.device_count());'"
-
+alias gpucheck_pytorch="python -c 'import torch;print(torch.cuda.is_available(), torch.cuda.device_count());'"
+alias gpucheck_tensorflow="python -c 'import tensorflow as tf;tf.test.is_gpu_available()'"
 
 # editor
 alias vs="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code -r"
