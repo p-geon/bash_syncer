@@ -63,6 +63,7 @@ alias mh="make help"
 
 # git
 alias g="git"
+
 ## add
 alias gadry="git add -A --dry-run" #pre-check without adding
 alias ga="git add"
@@ -82,16 +83,23 @@ alias gp="git push"
 alias main="git push origin main"
 alias master="git push origin master"
 alias gacp="git add -A && git commit -m 'update' && git push origin main"
-## branch/graph
+
+## branch
 alias gb="git branch"
+alias gout="git checkout"
 alias merge="git merge --squash"
+
+# show & logging
 alias gl="git log --oneline"
 alias gg="git log --graph --all --format='%x09%an%x09%h %d %s'"
 alias ggg="git log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'"
 alias gs="git status"
 alias gss="git status -s"
+alias gshow="git log --name-status HEAD^..HEAD" # show last commit status & files
+
 ## config
 alias gcl="git config --list"
+
 ## stash
 alias gswap="git stash -u && git checkout -b swap && git stash pop"
 
