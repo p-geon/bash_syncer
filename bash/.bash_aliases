@@ -88,6 +88,7 @@ alias gacp="git add -A && git commit -m 'update' && git push origin main"
 alias gb="git branch"
 alias gout="git checkout"
 alias merge="git merge --squash"
+alias gmastermain="git branch -m master main"
 
 # show & logging
 alias gl="git log --oneline"
