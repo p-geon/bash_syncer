@@ -56,3 +56,8 @@ conda-install:
 ENVNAME = envname
 conda-create: ## 
 	conda create -n ${ENVNAME} python=3.8
+
+conda-torch-gpu:
+	conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
+conda-tensorflow-gpu:
+	conda install tensorflow=2.4.1=gpu_py38h8a7d6ce_0
