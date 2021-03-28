@@ -89,6 +89,7 @@ alias gb="git branch"
 alias gout="git checkout"
 alias merge="git merge --squash"
 alias gmastermain="git branch -m master main"
+alias gdeloriginbranch="git push --delete origin" # + branchname
 
 # show & logging
 alias gl="git log --oneline"
