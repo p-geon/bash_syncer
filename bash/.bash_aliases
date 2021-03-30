@@ -128,6 +128,8 @@ alias wn="watch -n 2.0 nvidia-smi"
 ## Python
 alias ps-python="ps aux | grep python"
 alias ci="conda info -e"
+alias ip="ipython"
+alias denva="direnv allow ."
 
 
 # specific
@@ -148,8 +150,8 @@ alias G="grep"
 alias p="pwd"
 
 
-# python
-alias ip="ipython"
+# direnv
+alias 
 
 # pytorch/GPU
 alias gpucheck_pytorch="python -c 'import torch;print(torch.cuda.is_available(), torch.cuda.device_count());'"
