@@ -8,6 +8,11 @@ alias RRR="UPDATE && reload"
 alias SS="A | grep"
 
 
+# Ubuntu-utils
+alias sudud="sudo apt-get update"
+alias sudug="sudo apt-get upgrade"
+
+
 # show Directory
 alias Td="tree -d -L 2 ./"
 alias T1d="tree -d -L 1 ./"
