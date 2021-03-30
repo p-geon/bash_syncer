@@ -125,9 +125,13 @@ alias dclean="dstop && drmi"
 alias wn="watch -n 2.0 nvidia-smi"
 
 
-# specific
-alias heavy-sarch="du -ah ./ | sort -rh | head -5"
+## Python
 alias ps-python="ps aux | grep python"
+alias ci="conda info -e"
+
+
+# specific
+alias heavy-search="du -ah ./ | sort -rh | head -5"
 
 
 # OS-utils
