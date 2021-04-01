@@ -53,17 +53,10 @@ alias tmux.cs="cat ~/.tmux.conf | grep bind"
 alias t="tmux"
 alias ta="tmux a"
 alias tk="tmux kill-server"
-alias mt="make tmux"
-alias mtv="make tmux-vs"
 
 
-# make
-alias m="make"
-alias mb="make build"
-alias mr="make run"
-alias mbr="make br"
-alias mc="make clean"
-alias mh="make help"
+# make support
+alias h="make help"
 
 
 # git
